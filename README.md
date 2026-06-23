@@ -32,9 +32,6 @@ A **React-based movie discovery application** that lets users browse popular mov
 ### Installation
 
 ```bash
-# Navigate to the project directory
-cd "movie app frontend"
-
 # Install dependencies
 npm install
 
@@ -54,7 +51,6 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-movie app frontend/
 ├── src/
 │   ├── App.jsx                   # Root component with routing
 │   ├── main.jsx                  # Entry point (BrowserRouter wrapper)
@@ -78,10 +74,11 @@ movie app frontend/
 
 ## 🔑 API Key
 
-The TMDB API key is located in `src/services/api.js` inside the `movie app frontend` directory. Replace it with your own:
+The TMDB API key is loaded from the `.env` file at the project root. Create one with your own key:
 
-```js
-const API_KEY = "your_api_key_here";
+```env
+VITE_API_KEY=your_api_key_here
+VITE_BASE_URL=https://api.themoviedb.org/3
 ```
 
 ## 📄 License
