@@ -54,26 +54,31 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-src/
-├── App.jsx                   # Root component with routing
-├── main.jsx                  # Entry point (BrowserRouter wrapper)
-├── services/
-│   └── api.js                # TMDB API calls (popular, search)
-├── contexts/
-│   └── MovieContext.jsx      # Global favorites state + localStorage
-├── pages/
-│   ├── Home.jsx              # Search bar + movie grid
-│   └── Favorites.jsx         # Saved movies display
-├── components/
-│   ├── NavBar.jsx            # Top navigation bar
-│   └── MovieCard.jsx         # Movie poster + favorite toggle
-├── css/                      # Stylesheets
-└── assets/                   # Static assets
+movie app frontend/
+├── src/
+│   ├── App.jsx                   # Root component with routing
+│   ├── main.jsx                  # Entry point (BrowserRouter wrapper)
+│   ├── services/
+│   │   └── api.js                # TMDB API calls (popular, search)
+│   ├── contexts/
+│   │   └── MovieContext.jsx      # Global favorites state + localStorage
+│   ├── pages/
+│   │   ├── Home.jsx              # Search bar + movie grid
+│   │   └── Favorites.jsx         # Saved movies display
+│   ├── components/
+│   │   ├── NavBar.jsx            # Top navigation bar
+│   │   └── MovieCard.jsx         # Movie poster + favorite toggle
+│   └── css/                      # Stylesheets
+├── public/
+├── index.html
+├── package.json
+├── vite.config.js
+└── eslint.config.js
 ```
 
 ## 🔑 API Key
 
-The TMDB API key is located in `src/services/api.js`. Replace it with your own:
+The TMDB API key is located in `src/services/api.js` inside the `movie app frontend` directory. Replace it with your own:
 
 ```js
 const API_KEY = "your_api_key_here";
